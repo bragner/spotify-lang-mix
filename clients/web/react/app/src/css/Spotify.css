@@ -1,0 +1,39 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 90px;
+  background-color: #181818;
+  color: grey;
+}
+
+.header {
+  border-bottom: 1px solid black;
+}
+
+.sidebar {
+  border-right: 1px solid black;
+  min-height: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer {
+  border-top: 1px solid black;
+}
+
+.body {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 230px 1fr;
+}
+.main {
+  display: grid;
+  grid-template-rows: 90px 1fr;
+}
+
+.content {
+  min-height: 0;
+  height: calc(100vh - 180px);
+  overflow-y: auto;
+}
